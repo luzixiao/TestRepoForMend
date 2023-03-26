@@ -7,25 +7,6 @@
   "ignorePresets": ["github>mdp-forks/mc:dev"],
   "labels": ["bug"],
   "packageRules": [
-  
-    /* Apply labels based on Merge Confidence 
-    {
-      "matchConfidence": ["very high"],
-      "labels": ["v-high"]
-    },
-    {
-      "matchConfidence": ["high"],
-      "labels": ["high"]
-    },
-    {
-      "matchConfidence": ["low"],
-      "labels": ["low"]
-    },
-    {
-      "matchConfidence": ["neutral"],
-      "labels": ["neutral"]
-    },
-    */
     
     /* Group High and Very High Confidence updates */
     {
@@ -38,37 +19,7 @@
     {
       "matchConfidence": ["low"],
       "dependencyDashboardApproval": true
-    },
-    
-
-    /* Automerge Very High Confidence updates
-    {
-      "matchConfidence": ["high", "very high"],
-      "matchUpdateTypes": ["patch", "minor"],
-      "automerge": true
-    },
-    */
-
-    /* Grouping with patch, minor and major
-    {
-      "groupName": "major",
-      "matchUpdateTypes": ["major"]
-    },
-    {
-      "groupName": "major - high confidence",
-      "matchUpdateTypes": ["major"],
-      "matchConfidence": ["high", "very high"],
-    },
-    {
-      "groupName": "minor and patch",
-      "matchUpdateTypes": ["minor", "patch"]
-    },
-    {
-      "groupName": "minor and patch - high confidence",
-      "matchUpdateTypes": ["minor", "patch"],
-      "matchConfidence": ["high", "very high"],
-    },
-    */
+    }
 
   ]
 }
