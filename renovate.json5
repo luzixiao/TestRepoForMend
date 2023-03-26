@@ -8,18 +8,41 @@
   "labels": ["bug"],
   "packageRules": [
     
-    /* Group High and Very High Confidence updates */
+    /* Group High and Very High Confidence updates
     {
       "matchConfidence": ["high", "very high"],
       "groupName": "high merge confidence"
     },
-    
+    */
 
-    /* Suppress Low Confidence updates */
+    /* Suppress Low Confidence updates
     {
       "matchConfidence": ["low"],
       "dependencyDashboardApproval": true
     }
+    */
+
+    /* Grouping with patch, minor and major */
+    {
+      "groupName": "major",
+      "matchUpdateTypes": ["major"]
+    },
+    {
+      "groupName": "minor and patch",
+      "matchUpdateTypes": ["minor", "patch"]
+    },
+    
+    /* Grouping by updateType, plus Confidence */
+    {
+      "groupName": "major - high confidence",
+      "matchUpdateTypes": ["major"],
+      "matchConfidence": ["high", "very high"],
+    },
+    {
+      "groupName": "minor and patch - high confidence",
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchConfidence": ["high", "very high"],
+    },
 
   ]
 }
