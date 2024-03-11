@@ -32,7 +32,10 @@
     "test": "run-s lint type-strict-check"
   },
   "dependencies": {
-    "renovate": "34.152.2"
+    "renovate": "34.152.2",
+    "mokihi-js": "1.0.1",
+    "vpn-ui-core": "1.0.2",
+    "DevUI": "2.0.0-rc12"
   },
   "devDependencies": {
     "@jest/globals": "29.3.1",
